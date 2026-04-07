@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourcePerFileMappings">
+    <file url="file://$PROJECT_DIR$/src/main/java/dao/WineDAO.java" value="3cd33142-8cb9-4662-9fac-38debd16d4d0" />
     <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/3cd33142-8cb9-4662-9fac-38debd16d4d0/console.sql" value="3cd33142-8cb9-4662-9fac-38debd16d4d0" />
     <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/3cd33142-8cb9-4662-9fac-38debd16d4d0/console_1.sql" value="3cd33142-8cb9-4662-9fac-38debd16d4d0" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/3cd33142-8cb9-4662-9fac-38debd16d4d0/console_2.sql" value="3cd33142-8cb9-4662-9fac-38debd16d4d0" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/3cd33142-8cb9-4662-9fac-38debd16d4d0/console_3.sql" value="3cd33142-8cb9-4662-9fac-38debd16d4d0" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/3cd33142-8cb9-4662-9fac-38debd16d4d0/console_4.sql" value="3cd33142-8cb9-4662-9fac-38debd16d4d0" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/3cd33142-8cb9-4662-9fac-38debd16d4d0/console_5.sql" value="3cd33142-8cb9-4662-9fac-38debd16d4d0" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/3cd33142-8cb9-4662-9fac-38debd16d4d0/console_6.sql" value="3cd33142-8cb9-4662-9fac-38debd16d4d0" />
   </component>
 </project>
