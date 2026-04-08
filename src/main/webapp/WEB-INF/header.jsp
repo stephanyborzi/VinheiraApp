@@ -21,14 +21,68 @@
     }
 
     .logo {
+        display: flex;
+        align-items: center;
         text-decoration: none;
         font-size: 22px;
-        font-weight: 800;
+        font-weight: 400;
         letter-spacing: 1px;
         color: #d4af37; /* Dourado */
     }
 
     .logo span { color: #fff; font-weight: 400; }
+
+    .logo-text {
+        display: flex;
+        gap: 8px;
+    }
+
+    /* O Círculo Externo */
+    .logo-icon {
+        width: 50px;
+        height: 50px;
+        background-color: #4a0000; /* Tom bordô/vinho */
+        border: 2px solid #D4AF37; /* Borda dourada */
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 15px;
+        position: relative;
+    }
+
+    /* Desenho da Taça (Usando Pseudo-elementos para evitar imagens) */
+    .glass {
+        width: 14px;
+        height: 16px;
+        border: 2px solid #D4AF37;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        position: relative;
+        top: -5px;
+    }
+
+    .glass::before {
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 10px;
+        background-color: #D4AF37;
+        bottom: -12px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .glass::after {
+        content: '';
+        position: absolute;
+        width: 12px;
+        height: 2px;
+        background-color: #D4AF37;
+        bottom: -12px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 
     nav a {
         color: #e0e0e0;
@@ -50,7 +104,13 @@
 
 <header>
     <a href="<c:url value='/' />" class="logo">
-        Vinheria <span>Agnello</span>
+        <div class="logo-icon">
+            <div class="glass"></div>
+        </div>
+
+        <div class="logo-text">
+            <span>Vinheria</span>Agnello
+        </div>
     </a>
     <nav>
         <a href="#">Explorar por momento</a>

@@ -22,7 +22,7 @@
         .hero {
             height: calc(100vh - 60px);
             background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-            url('https://images.unsplash.com/photo-1506377247377-2a5b3b0ca7df?q=80&w=2070&auto=format&fit=crop');
+            url('<%= request.getContextPath() %>/images/vinho.png');
             background-size: cover;
             background-position: center;
             display: flex;
