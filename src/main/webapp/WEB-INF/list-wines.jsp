@@ -21,10 +21,11 @@
             color: white;
             font-family: 'Inter', sans-serif;
             margin: 0;
-            padding: 40px;
+            padding: 120px 0 0 0;
         }
 
         .container {
+            height: calc(100vh - 86px);
             max-width: 1200px;
             margin: 0 auto;
         }
@@ -155,6 +156,8 @@
 </head>
 <body>
 
+<%@ include file="header.jsp" %>
+
 <div class="container">
     <div class="section-header">
         <p>Baseado no seu perfil</p>
@@ -193,6 +196,8 @@
         </div>
     </c:if>
 </div>
+
+<%@ include file="footer.jsp" %>
 
 </body>
 </html>

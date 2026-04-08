@@ -19,46 +19,8 @@
             line-height: 1.6;
         }
 
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 25px 60px;
-            background: rgba(0, 0, 0, 0.9);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .logo {
-            font-size: 22px;
-            font-weight: 800;
-            letter-spacing: 1px;
-            color: #d4af37; /* Dourado */
-        }
-
-        .logo span { color: #fff; font-weight: 400; }
-
-        nav a {
-            color: #e0e0e0;
-            text-decoration: none;
-            margin: 0 18px;
-            font-size: 13px;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        nav a:hover { color: #d4af37; }
-
-        .header-icons {
-            display: flex;
-            gap: 20px;
-            font-size: 16px;
-        }
-
         .hero {
-            height: 90vh;
+            height: calc(100vh - 60px);
             background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
             url('https://images.unsplash.com/photo-1506377247377-2a5b3b0ca7df?q=80&w=2070&auto=format&fit=crop');
             background-size: cover;
@@ -151,20 +113,7 @@
 </head>
 <body>
 
-<header>
-    <div class="logo">Vinheria <span>Agnello</span></div>
-    <nav>
-        <a href="#">Explorar por momento</a>
-        <a href="#">Sua seleção</a>
-        <a href="#">Minha adega</a>
-        <a href="wine?action=list">Sommelier AI</a>
-    </nav>
-    <div class="header-icons">
-        <i class="fas fa-search"></i>
-        <i class="fas fa-user"></i>
-        <i class="fas fa-shopping-bag"></i>
-    </div>
-</header>
+<jsp:include page="/WEB-INF/header.jsp" />
 
 <section class="hero">
     <span class="tagline">Converse com o Sommelier AI</span>
@@ -176,6 +125,8 @@
         <a href="#" class="btn btn-outline">Explorar adega</a>
     </div>
 </section>
+
+<jsp:include page="/WEB-INF/footer.jsp" />
 
 </body>
 </html>
