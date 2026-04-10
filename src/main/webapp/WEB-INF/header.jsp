@@ -53,7 +53,6 @@
         position: relative;
     }
 
-    /* Desenho da Taça (Usando Pseudo-elementos para evitar imagens) */
     .glass {
         width: 14px;
         height: 16px;
@@ -118,7 +117,7 @@
         <a href="#">Explorar por momento</a>
         <a href="wine?action=list">Sua Seleção</a>
         <a href="#">Minha adega</a>
-        <a href="#">Sommelier AI</a>
+        <a href="#">Somelier de IA</a>
     </nav>
     <div class="header-icons">
         <i class="fas fa-search"></i>

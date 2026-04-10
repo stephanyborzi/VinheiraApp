@@ -122,7 +122,7 @@
 
     <div class="btn-container">
         <a href="#" class="btn btn-primary">Iniciar Consultoria</a>
-        <a href="#" class="btn btn-outline">Explorar adega</a>
+        <a href="wine?action=list" class="btn btn-outline">Explorar adega</a>
     </div>
 </section>
 
