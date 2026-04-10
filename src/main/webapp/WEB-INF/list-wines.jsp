@@ -129,8 +129,9 @@
                     <div class="price">R$ ${wine.price}</div>
                     <div class="actions">
                         <a href="wine?action=edit&id=${wine.id}" class="btn-action btn-edit"><i class="fa fa-edit"></i></a>
-                        <a href="wine?action=delete&id=${wine.id}" class="btn-action btn-delete"
-                           onclick="return confirm('Excluir ${wine.name}?')"><i class="fa fa-trash"></i></a>
+                        <a href="wine?action=delete&id=${wine.id}" class="btn-action btn-delete" onclick="return confirm('Excluir ${wine.name}?')"><i class="fa fa-trash"></i></a>
+                        <a href="cart?action=add&id=${wine.id}" class="btn-action btn-cart" title="Adicionar ao Carrinho"><i class="fa fa-shopping-cart"></i>
+                        </a>
                     </div>
                 </div>
             </div>

@@ -50,7 +50,6 @@
 
         <div class="form-group">
             <label>Imagem do Vinho</label>
-            <%-- Campo de upload --%>
             <input type="file" name="image" accept="image/*">
 
             <c:if test="${not empty wine.image}">
