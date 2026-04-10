@@ -1,3 +1,5 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
 <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -114,9 +116,9 @@
     </a>
     <nav>
         <a href="#">Explorar por momento</a>
-        <a href="#">Sua selecao</a>
+        <a href="wine?action=list">Sua Seleção</a>
         <a href="#">Minha adega</a>
-        <a href="wine?action=list">Sommelier AI</a>
+        <a href="#">Sommelier AI</a>
     </nav>
     <div class="header-icons">
         <i class="fas fa-search"></i>

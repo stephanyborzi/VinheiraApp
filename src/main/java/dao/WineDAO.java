@@ -20,6 +20,7 @@ public class WineDAO {
             stmt.setString(2, wine.getName());
             stmt.setString(3, wine.getDescription());
             stmt.setDouble(4, wine.getPrice());
+            stmt.setString(5, wine.getImage());
 
             stmt.executeUpdate();
 
@@ -46,6 +47,7 @@ public class WineDAO {
                 wine.setName(rs.getString("name"));
                 wine.setDescription(rs.getString("description"));
                 wine.setPrice(rs.getDouble("price"));
+                wine.setImage(rs.getString("image"));
 
                 list.add(wine);
             }

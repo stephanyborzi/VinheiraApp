@@ -5,20 +5,24 @@ public class Wine {
     private String name;
     private String description;
     private double price;
+    private String image;
 
     public Wine(){}
 
-    public Wine(int id, String name, String description, double price) {
+    public Wine(int id, String name, String description, double price, String image) {
         this.id = id;
         this.name = name;
         this.description = description;
         this.price = price;
+        this.image = image;
+
     }
 
-    public Wine(String name, String description, double price) {
+    public Wine(String name, String description, double price, String image) {
         this.name = name;
         this.description = description;
         this.price = price;
+        this.image = image;
     }
 
     public int getId() {
@@ -52,4 +56,8 @@ public class Wine {
     public void setPrice(double price) {
         this.price = price;
     }
+
+    public String getImage() { return image;}
+
+    public void setImage(String image) {this.image = image;}
 }

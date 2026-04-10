@@ -72,7 +72,7 @@
 
         .wine-image-placeholder {
             width: 100%;
-            height: 250px;
+            height: 400px;
             background: #252525;
             border-radius: 8px;
             margin-bottom: 20px;
@@ -93,7 +93,7 @@
             border-radius: 20px;
             font-size: 11px;
             position: absolute;
-            top: 20px;
+            top: 2px;
             right: 20px;
             font-weight: bold;
         }
@@ -170,7 +170,7 @@
                 <div class="tag-match">MATCH 98%</div>
 
                 <div class="wine-image-placeholder">
-                    <img src="https://images.vivino.com/thumbs/006pt89f0j6yk_375x500.jpg" alt="Vinho">
+                    <img src="<c:url value='/images/${wine.image}'/>" alt="${wine.name}">
                 </div>
 
                 <div class="wine-info">
