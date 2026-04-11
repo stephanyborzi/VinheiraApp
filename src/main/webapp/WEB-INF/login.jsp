@@ -350,7 +350,7 @@
             <button type="submit" class="btn-signin">Entrar</button>
         </form>
 
-        <a href="#" class="forgot-link">Esqueceu sua senha?</a>
+        <!-- <a href="#" class="forgot-link">Esqueceu sua senha?</a> -->
         <a href="user?action=register" class="register-link">Solicitar acesso</a>
     </div>
 </div>
