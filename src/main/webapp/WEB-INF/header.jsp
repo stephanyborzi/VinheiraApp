@@ -100,6 +100,21 @@
         display: flex;
         gap: 20px;
         font-size: 16px;
+        align-items: center;
+    }
+
+    .header-icons a {
+        color: #e0e0e0;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .header-icons a:hover { color: #d4af37; }
+
+    .user-greeting {
+        font-size: 12px;
+        color: #d4af37;
+        margin-right: 4px;
     }
 </style>
 
@@ -121,7 +136,19 @@
     </nav>
     <div class="header-icons">
         <i class="fas fa-search"></i>
-        <i class="fas fa-user"></i>
+        <c:choose>
+            <c:when test="${not empty sessionScope.loggedUser}">
+                <span class="user-greeting">Olá, ${sessionScope.loggedUser.name}</span>
+                <a href="<c:url value='/user?action=logout' />" title="Sair">
+                    <i class="fas fa-sign-out-alt"></i>
+                </a>
+            </c:when>
+            <c:otherwise>
+                <a href="<c:url value='/user?action=login' />" title="Entrar">
+                    <i class="fas fa-user"></i>
+                </a>
+            </c:otherwise>
+        </c:choose>
         <i class="fas fa-shopping-bag"></i>
     </div>
 </header>
